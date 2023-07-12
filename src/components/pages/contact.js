@@ -1,0 +1,80 @@
+import React from 'react'
+import Navbar from '../Navbar/Navbar'
+import './contact.css'
+import { Link } from 'react-router-dom'
+import {BsFacebook} from 'react-icons/bs'
+import {BsInstagram} from 'react-icons/bs'
+import {BsLinkedin} from 'react-icons/bs'
+
+function Contact() {
+  const [formStatus, setFormStatus] = React.useState('Send')
+  const onSubmit = (e) => {
+    e.preventDefault()
+    setFormStatus('Submitting...')
+    const { name, email, message } = e.target.elements
+    let conFom = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    }
+    console.log(conFom)
+  }
+  return (
+    <div>
+        <Navbar/>
+        <div className='contact-header'>
+          <h1>Contact Me</h1>
+        </div>
+
+        <div className='contact-hero'>
+
+        <div className='contact-form'>
+        <div className="container mt-5">
+      <h2 className="mb-3">Send an email</h2>
+      <form onSubmit={onSubmit}>
+        <div className="mb-3">
+          <label className="form-label" htmlFor="name">
+            Name
+          </label>
+          <input className="form-control" type="text" id="name" required />
+        </div>
+        <div className="mb-3">
+          <label className="form-label" htmlFor="email">
+            Email
+          </label>
+          <input className="form-control" type="email" id="email" required />
+        </div>
+        <div className="mb-3">
+          <label className="form-label" htmlFor="message">
+            Message
+          </label>
+          <textarea className="form-control" id="message" required />
+        </div>
+        <button className="btn btn-danger" type="submit">
+          {formStatus}
+        </button>
+      </form>
+    </div>
+        </div>
+
+     
+      <div className='contact-details'>
+        <h3>Contact me</h3>
+        <h4>Mob: +91 9284138491</h4>
+        <h4>Email: abhaykhemnar07@gmail.com</h4>
+        <h4>LinkedIn: <Link to= "https://www.linkedin.com/in/abhay-khemnar-ab73b7259/">Click Here</Link></h4>
+
+        <div className='social-media'>
+          <h2>Connect with me</h2>
+          <Link to="https://www.facebook.com/abhay.khemnar">               <BsFacebook/>  </Link>   
+          <Link to="https://www.instagram.com/abhay.khemnar/?next=%2F">    <BsInstagram/> </Link>
+          <Link to="https://www.linkedin.com/in/abhay-khemnar-ab73b7259/"> <BsLinkedin/>  </Link>
+        </div>
+      </div>
+
+        </div>
+    </div>
+  )
+}
+
+export default Contact
