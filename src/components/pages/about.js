@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import './about.css'
-import Resume from '../../Resume_AbhayKhemnar.pdf'
+import Resume from '../../anoopResume.pdf'
 
 import {AiFillHtml5} from 'react-icons/ai'
 import {DiCss3} from 'react-icons/di'
@@ -26,7 +26,7 @@ function About() {
             <div className='abt-image'></div>
           </div>
           <div className='about-content'>
-            <h1>Hi, I am Abhay</h1>
+            <h1>Hi, I am Anoop</h1>
             <h3>Front-End Developer</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -34,8 +34,8 @@ function About() {
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
               <a href={Resume}
-                 download="Abhay_K-PDF-document"
-                 target="_Abhay_resume"
+                 download="Anoop_AG-PDF-document"
+                 target="_Anoop_resume"
                  rel="noopener noreferrer">
                 <button>Download Resume</button>
               </a>

@@ -11,7 +11,7 @@ function Navbar() {
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className='container'>
 
-            <a class="navbar-brand"><button onClick={()=>navigate("/")}><span>A</span>BHAY K</button></a>
+            <a class="navbar-brand"><button onClick={()=>navigate("/")}><span>A</span>NOOP</button></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <FontAwesomeIcon icon={faBars} style={{color:"#fff"}} />
             </button>
@@ -22,13 +22,13 @@ function Navbar() {
                     <a className="nav-link" ><button onClick={()=>navigate("/")}>Home</button></a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link"><button onClick={()=>navigate("/About")}>About</button></a>
+                    <a className="nav-link" ><button onClick={()=>navigate("/About")}>About</button></a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link"><button onClick={()=>navigate("/Projects")}>Projects</button></a>
+                    <a className="nav-link" ><button onClick={()=>navigate("/Projects")}>Projects</button></a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link"><button onClick={()=>navigate("/Contact")}>Contact</button></a>
+                    <a className="nav-link" ><button onClick={()=>navigate("/Contact")}>Contact</button></a>
                 </li>
                 </ul>
             </div>

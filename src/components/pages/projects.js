@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import './projects.css'
 import Gym_Img from '../../Gym.png'
-import Portfolio_Img from '../../Portgolio.png'
+import Portfolio_Img from '../../portfolio_image.png'
 import Twitter_Img from '../../twitter.png'
 import { Link } from 'react-router-dom'
 

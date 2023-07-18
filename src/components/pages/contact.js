@@ -60,15 +60,15 @@ function Contact() {
      
       <div className='contact-details'>
         <h3>Contact me</h3>
-        <h4>Mob: +91 9284138491</h4>
-        <h4>Email: abhaykhemnar07@gmail.com</h4>
-        <h4>LinkedIn: <Link to= "https://www.linkedin.com/in/abhay-khemnar-ab73b7259/">Click Here</Link></h4>
+        <h4>Mob: +91 9567200950</h4>
+        <h4>Email: anoopag47@gmail.com</h4>
+        <h4>LinkedIn: <Link to= "https://www.linkedin.com/in/anoopgirish/">Click Here</Link></h4>
 
         <div className='social-media'>
           <h2>Connect with me</h2>
-          <Link to="https://www.facebook.com/abhay.khemnar">               <BsFacebook/>  </Link>   
-          <Link to="https://www.instagram.com/abhay.khemnar/?next=%2F">    <BsInstagram/> </Link>
-          <Link to="https://www.linkedin.com/in/abhay-khemnar-ab73b7259/"> <BsLinkedin/>  </Link>
+          <Link to="https://www.facebook.com/anoop.ag.50"><BsFacebook/></Link>   
+          <Link to="https://www.instagram.com/an_oop_ag/"><BsInstagram/></Link>
+          <Link to="https://www.linkedin.com/in/anoopgirish/"><BsLinkedin/></Link>
         </div>
       </div>
 
