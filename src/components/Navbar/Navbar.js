@@ -19,16 +19,16 @@ function Navbar() {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ml-auto">
                 <li className="nav-item active">
-                    <a className="nav-link" href="/#"><button onClick={()=>navigate("/")}>Home</button></a>
+                    <a className="nav-link"><button onClick={()=>navigate("/")}>Home</button></a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="/#"><button onClick={()=>navigate("/About")}>About</button></a>
+                    <a className="nav-link" ><button onClick={()=>navigate("/About")}>About</button></a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="/#"><button onClick={()=>navigate("/Projects")}>Projects</button></a>
+                    <a className="nav-link" ><button onClick={()=>navigate("/Projects")}>Projects</button></a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="/#"><button onClick={()=>navigate("/Contact")}>Contact</button></a>
+                    <a className="nav-link"><button onClick={()=>navigate("/Contact")}>Contact</button></a>
                 </li>
                 </ul>
             </div>
